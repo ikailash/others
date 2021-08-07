@@ -1,0 +1,20 @@
+<html>
+    <title>Book Appointment</title>
+    <body bgcolor="#b0e0e6" style="overflow: hidden;height: 50%">
+        <div id="main" style="size: 60px">
+            <br><br>
+            <h1 style="text-align: center">Book Appointment</h1>
+            <br><br><br><br><br><br>
+           <p>
+               <form action = "http://127.0.0.1:5000/booking.html" method = "POST" style="text-align: center;">
+                <select name="option" onmousedown="this.value='';" onchange="myfunction(this.value)" >
+                    {% for each in result %}
+                    <option value="{{each}}" selected>{{each}}</option>
+                    {% endfor %}     
+                </select>
+                <input type="submit" value="submit" >
+                </form>
+           </p>
+        </div>
+    </body>
+</html>
