@@ -9,10 +9,12 @@
                <form action = "http://127.0.0.1:5000/booking.html" method = "POST" style="text-align: center;">
                 <select name="option" onmousedown="this.value='';" onchange="myfunction(this.value)" >
                     {% for each in result %}
-                    <option value="{{each}}" selected>{{each}}</option>
+                    <option value="{{each}}">{{each}}</option>
                     {% endfor %}     
                 </select>
-                <input type="submit" value="submit" >
+                <p>Appointment Date:</p> 
+                <input type="date" name ="book_date"><br>
+                <input type="submit" value="submit">
                 </form>
            </p>
         </div>
